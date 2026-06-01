@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie API Postman Documentation</title>
+    <style>
+      :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; }
+      body { margin: 0; background: #0f172a; color: #e5eefb; }
+      main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 72px; }
+      h1, h2, h3 { color: #ffffff; }
+      .card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 18px; margin-bottom: 18px; }
+      code, pre { font-family: Consolas, "Courier New", monospace; }
+      code { background: #1f2937; padding: 2px 6px; border-radius: 6px; }
+      pre { background: #020617; padding: 12px; border-radius: 12px; overflow-x: auto; }
+      .pill { display: inline-block; background: #2563eb; color: #eff6ff; padding: 6px 10px; border-radius: 999px; font-size: 12px; margin-right: 8px; }
+      ul { padding-left: 18px; }
+      a { color: #93c5fd; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Movie API Postman Documentation</h1>
+      <p>This is a separate documentation page kept outside the GitHub project, as requested.</p>
+
+      <section class="card">
+        <h2>Overview</h2>
+        <p>The API provides movie management with JWT authentication, GitHub OAuth, Redis caching, Swagger docs, and GraphQL support.</p>
+        <p>Primary live URL: <a href="https://my-api-n6ed.onrender.com">https://my-api-n6ed.onrender.com</a></p>
+        <p>Swagger UI: <a href="https://my-api-n6ed.onrender.com/api-docs">https://my-api-n6ed.onrender.com/api-docs</a></p>
+      </section>
+
+      <section class="card">
+        <h2>Quick Start</h2>
+        <ol>
+          <li>Import the collection file from <code>my_api/postman/Movie_API.postman_collection.json</code>.</li>
+          <li>Choose the environment file for local or production usage.</li>
+          <li>Run <strong>Register</strong> and then <strong>Login</strong>.</li>
+          <li>Use the saved <code>{{token}}</code> value for protected requests.</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Included Endpoints</h2>
+        <ul>
+          <li>Auth: Register, Login, Profile, GitHub OAuth</li>
+          <li>Movies: list, search, get by ID</li>
+          <li>Protected Movies: create, update, delete</li>
+          <li>GraphQL: queries and mutations</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Example Request</h2>
+        <pre>POST https://my-api-n6ed.onrender.com/register
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "email": "john@example.com",
+  "password": "password123"
+}</pre>
+      </section>
+
+      <section class="card">
+        <h2>How to Publish This in Postman</h2>
+        <ol>
+          <li>Open Postman and import the collection JSON file.</li>
+          <li>Click <strong>Publish</strong> in the collection menu.</li>
+          <li>Choose a title and description, then create the documentation page.</li>
+          <li>Copy the generated public URL for your README or portfolio.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
